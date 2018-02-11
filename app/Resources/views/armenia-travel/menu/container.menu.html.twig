@@ -1,0 +1,28 @@
+{{ '@AppBundle/Resources/public/css/menu/container.menu.css'|cssloader }}
+<div class="menu">
+    <div class="divtablewebbox">
+        <img src="/img/icon1.png">
+        <h1 class="minititle"> Armenia Travel</h1>
+    </div>
+    <ul class="ulmenu trl lang">
+        <li class="activepage"><a href="#">English <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        <div class="divlangue">
+            <div>
+
+                {% set pathurl = app.request.pathinfo|split("/") %}
+                {% set pathurl = pathurl[2:] %}
+                {% for key,lang in languages %}
+                    <a href="/{{ key }}/{{ pathurl|join('/') }}">{{ lang }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        </li>
+    </ul>
+
+
+    <ul class="ulmenu trl">
+        {% for menu in ContainerMenu %}
+            <li><a href=" /{{ app.request.attributes.get('_locale') }}/{{ menu.url }}">{{ menu.icon|raw }} {{ menu.title|trans }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

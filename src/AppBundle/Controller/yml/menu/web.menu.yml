@@ -1,0 +1,33 @@
+parameters:
+  container.menu:
+    100:
+      url: "tours"
+      title: "tours.trans"
+      icon: <i class="fa fa-globe" aria-hidden="true"></i>
+    200:
+      url: "hotel"
+      title: "hotels.trans"
+      icon: <i class="fa fa-bed" aria-hidden="true"></i>
+    300:
+      url: "restaurant"
+      title: "restaurant.trans"
+      icon: <i class="fa fa-utensils" aria-hidden="true"></i>
+    400:
+      url: "evenetements"
+      title: "evenements.trans"
+      icon: <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+    500:
+      url: "map"
+      title: "map.trans"
+      icon: <i class="fa fa-map-marker-alt"></i>
+    600:
+      url: "contact"
+      title: "contact.trans"
+      icon: <i class="fa fa-at"></i>
+    700:
+      url: "cars"
+      title: "Armenian Cars"
+      icon: <i class="fa fa-car"></i>
+
+
+

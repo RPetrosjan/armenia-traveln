@@ -1,0 +1,119 @@
+.container>.menu {
+    background-image: url(/img/garni.jpg?d);
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 5px #737373;
+}
+.container>.menu:before {
+    background-color: rgba(12, 113, 165, 0.66);
+    content: '';
+    display: inline-block;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+.container>.menu>.divtablewebbox {
+    position: relative;
+    text-align: center;
+}
+.container>.menu>.divtablewebbox>.minititle{
+    color: white;
+    font-family: 'Bitter', serif;
+    font-size: 21px;
+    text-shadow: 3px 0px 16px black;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.container>.menu>ul.ulmenu{
+    overflow: hidden;
+}
+.container>.menu>ul.ulmenu.trl {
+    margin: 0;
+    margin-top: 55px;
+    padding: 0;
+}
+.trl {
+    direction: rtl;
+}
+
+.container>.menu>ul.ulmenu.trl>li.activepage{
+    background-color: #ffffff59
+}
+.container>.menu>ul.ulmenu.trl>li {
+    color: white;
+    font-family: 'Bitter', serif;
+    cursor: pointer;
+    font-size: 15px;
+    border-top: 1px rgba(255, 255, 255, 0) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0) solid;
+    list-style: none;
+}
+.container>.menu>ul.ulmenu.trl>li>a{
+    display: block;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    padding-right: 70px;
+    text-decoration: none;
+}
+.container>.menu>ul.ulmenu.trl.lang{
+    margin-top: 5px;
+}
+.container>.menu>ul.ulmenu.trl.lang>li:hover>a>i.fa{
+    margin-right: -45px;
+}
+.container>.menu>ul.ulmenu.trl>li>a>i.fa{
+    float: right;
+    margin-right: -45px;
+    font-size: 18px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+.container>.menu>ul.ulmenu.trl>li:hover{
+    border-top: 1px rgba(255, 255, 255, 0.8) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
+    text-shadow: 4px 0px 30px black;
+}
+.container>.menu>ul.ulmenu.trl>li:hover>a>i.fa {
+    margin-right: -90px;
+}
+
+.divlangue{
+    left: 210px;
+    margin-top: -69px;
+    position: absolute;
+}
+.divlangue>div{
+    text-align: left;
+}
+.divlangue>div>a:hover{
+    border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
+    border-top: 1px rgba(255, 255, 255, 0.8) solid;
+    text-shadow: 4px 0px 30px black;
+}
+.divlangue>div>a{
+
+    background-color: #9a979780;
+    border-bottom: 1px transparent solid;
+    border-top: 1px transparent solid;
+    box-shadow: 0px 0px 43px -3px black;
+    color: white;
+    display: inline-block;
+    font-family: 'Bitter', serif;
+    font-size: 15px;
+    margin-bottom: 3px;
+    padding: 7px 15px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 0px 0px 11px black;
+    width: 171px;
+}
